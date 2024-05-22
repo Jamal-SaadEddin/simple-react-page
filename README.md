@@ -4,6 +4,9 @@ This project is a simple React-based interface for managing team members. There 
 <br>
 ![Untitled](https://github.com/Jamal-SaadEddin/simple-react-page/assets/104212352/ba65770f-cb01-42cb-9be6-ccc669d4ed0d)
 
+## Project Link
+[Simple React Page (jamal-saadeddin.github.io)](https://jamal-saadeddin.github.io/simple-react-page/)
+
 ## Installation
 
 To get started with this project, clone the repository and install the dependencies:
