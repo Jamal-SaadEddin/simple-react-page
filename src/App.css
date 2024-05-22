@@ -1,38 +1,101 @@
-.App {
+.members-paper {
   text-align: center;
+  max-width: 700px;
+  margin: auto;
+  color: #232d4b;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.members-header {
+  text-align: left;
+  padding-bottom: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.search-input {
+  width: 100%;
+  font-size: 20px;
+  padding: 0.5rem 3rem;
+  border: none;
+  border-bottom: 1px inset rgb(180, 180, 180);
+  margin-bottom: 1rem;
+  z-index: 1;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.search-input:focus {
+  outline: none;
+}
+
+.members-container {
+  max-width: 500px;
+  margin: auto;
+}
+
+.members-list {
+  list-style: none;
+  padding: 0;
+}
+
+.search-container {
+  position: relative;
+  display: block;
+  z-index: 2;
+}
+
+.search-container .icon {
+  position: absolute;
+  top: 5px;
+  color: gray;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.member-list-item {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  margin-bottom: 1rem;
+  padding: 1.5rem;
+}
+
+.member-list-item .icon:first-child {
+  position: relative;
+  top: 5px;
+}
+
+.member-list-item span {
+  display: flex;
+  gap: 1rem;
+}
+
+.member-actions {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 1.5rem;
+}
+
+.member-actions .btn {
+  padding: 1.5rem 6rem;
+  border-radius: 5px;
+  font-size: 16px;
+  max-width: 160px;
+}
+
+.member-actions .cancel-btn {
+  background: none;
+  border: 1px solid #ddd;
+  color: #ccc;
+}
+
+.member-actions .save-btn {
   color: white;
+  border: none;
+  background-image: linear-gradient(to right, #6BB7FF, #729FFF, #7682FF);
+  cursor: pointer;
+  box-shadow: 0 6px 6px rgba(0,0,0,0.1);
+  transition: background-color 0.3s;
+  text-transform: uppercase;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.member-actions .save-btn:hover {
+  background-image: linear-gradient(to right, #6BB7FF, #6BB7FF, #729FFF);
 }

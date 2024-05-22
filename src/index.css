@@ -11,3 +11,27 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+html {
+  /* 1 rem = 10px */
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 2rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+@media (max-width: 750px) {
+  body {
+    padding: 2rem;
+  }
+}
